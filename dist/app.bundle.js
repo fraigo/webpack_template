@@ -85,6 +85,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__github_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__github_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__package_json__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__package_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__package_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_js__ = __webpack_require__(15);
+
 
 
 
@@ -102,12 +104,12 @@ function component() {
   // Using class from loaded css
 
   //Append elements to container
-  container.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_2__icon_png___default.a));
+  container.appendChild(Object(__WEBPACK_IMPORTED_MODULE_5__utils_js__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_2__icon_png___default.a));
   container.appendChild(element);
   
   var link=document.createElement("a");
 	link.href="https://github.com/fraigo/webpack_template/";
-	link.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
+	link.appendChild(Object(__WEBPACK_IMPORTED_MODULE_5__utils_js__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
   
   container.appendChild(link);
   
@@ -125,11 +127,7 @@ function component() {
 }
 
 
-function imageIcon(obj){
-	var img=document.createElement("img");
-	img.src=obj;
-	return img;
-}
+
 
 document.body.appendChild(component());
 
@@ -17963,6 +17961,20 @@ module.exports = __webpack_require__.p + "f87561b8bb354ef83b09a66e54f70e08.png";
 /***/ (function(module, exports) {
 
 module.exports = {"name":"webpack-template","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","build":"webpack"},"repository":{"type":"git","url":"git://github.com/fraigo/webpack_template.git"},"keywords":["webpack","template","tutorial"],"author":"Francisco Igor","license":"MIT","devDependencies":{"css-loader":"^0.28.9","csv-loader":"^2.1.1","file-loader":"^1.1.8","style-loader":"^0.20.2","webpack":"^3.11.0","xml-loader":"^1.2.1"},"dependencies":{"lodash":"^4.17.5"}}
+
+/***/ }),
+/* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = imageIcon;
+
+function imageIcon(obj){
+	var img=document.createElement("img");
+	img.src=obj;
+	return img;
+}
+
 
 /***/ })
 /******/ ]);

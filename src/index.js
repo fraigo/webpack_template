@@ -3,6 +3,7 @@ import './style.css';
 import Icon from './icon.png';
 import GitHubIcon from './github.png';
 import Data from '../package.json';
+import imageIcon from './utils.js';
 
 function component() {
   var container = document.createElement('div');
@@ -38,10 +39,6 @@ function component() {
 }
 
 
-function imageIcon(obj){
-	var img=document.createElement("img");
-	img.src=obj;
-	return img;
-}
+
 
 document.body.appendChild(component());
