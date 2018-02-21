@@ -11,14 +11,20 @@
     "type": "git",
     "url": "git://github.com/fraigo/webpack_template.git"
   },
-  "keywords": ["webpack","template","tutorial"],
+  "keywords": [
+    "webpack",
+    "template",
+    "tutorial"
+  ],
   "author": "Francisco Igor",
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.28.9",
+    "csv-loader": "^2.1.1",
     "file-loader": "^1.1.8",
     "style-loader": "^0.20.2",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
     "lodash": "^4.17.5"

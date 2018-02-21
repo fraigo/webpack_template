@@ -21,6 +21,12 @@ body,td,input,select,textarea{
 	text-align:center;
 }
 
+.code{
+	width:50%;
+	text-align:left;
+	white-space:pre-wrap;
+}
+
 .logo{
 	background-image:url('./icon.png');
 	background-repeat:no-repeat;

@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
 import GitHubIcon from './github.png';
+import Data from '../package.json';
 
 function component() {
   var container = document.createElement('div');
@@ -22,6 +23,14 @@ function component() {
   link.appendChild(imageIcon(GitHubIcon))
   
   container.appendChild(link);
+  
+  var code = document.createElement('div');
+  code.classList.add("code");
+  code.innerHTML=JSON.stringify(Data,null,2);
+  console.log(Data);
+  
+  container.appendChild(code);
+  
   
   return container;
 }

@@ -83,6 +83,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__icon_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__github_png__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__github_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__github_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__package_json__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__package_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__package_json__);
+
 
 
 
@@ -107,6 +110,14 @@ function component() {
   link.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
   
   container.appendChild(link);
+  
+  var code = document.createElement('div');
+  code.classList.add("code");
+  code.innerHTML=JSON.stringify(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a,null,2);
+  console.log(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a);
+  
+  container.appendChild(code);
+  
   
   return container;
 }
@@ -17341,7 +17352,7 @@ exports = module.exports = __webpack_require__(8)(false);
 
 
 // module
-exports.push([module.i, "\r\nbody{\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n}\r\n\r\nbody,td,input,select,textarea{\r\n\tfont-family: \"Roboto\", Arial, Helverica, sans;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local('Roboto'), local('Roboto-Regular'),\r\n       url(" + escape(__webpack_require__(9)) + ") format('woff2'), \r\n       url(" + escape(__webpack_require__(10)) + ") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\r\n}\r\n\r\n.centered{\r\n\ttext-align:center;\r\n}\r\n\r\n.logo{\r\n\tbackground-image:url(" + escape(__webpack_require__(0)) + ");\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position: center;\r\n}", ""]);
+exports.push([module.i, "\r\nbody{\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n}\r\n\r\nbody,td,input,select,textarea{\r\n\tfont-family: \"Roboto\", Arial, Helverica, sans;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local('Roboto'), local('Roboto-Regular'),\r\n       url(" + escape(__webpack_require__(9)) + ") format('woff2'), \r\n       url(" + escape(__webpack_require__(10)) + ") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\r\n}\r\n\r\n.centered{\r\n\ttext-align:center;\r\n}\r\n\r\n.code{\r\n\twidth:50%;\r\n\ttext-align:left;\r\n\twhite-space:pre-wrap;\r\n}\r\n\r\n.logo{\r\n\tbackground-image:url(" + escape(__webpack_require__(0)) + ");\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position: center;\r\n}", ""]);
 
 // exports
 
@@ -17944,6 +17955,12 @@ module.exports = function (css) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "f87561b8bb354ef83b09a66e54f70e08.png";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = {"name":"webpack-template","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","build":"webpack"},"repository":{"type":"git","url":"git://github.com/fraigo/webpack_template.git"},"keywords":["webpack","template","tutorial"],"author":"Francisco Igor","license":"MIT","devDependencies":{"css-loader":"^0.28.9","csv-loader":"^2.1.1","file-loader":"^1.1.8","style-loader":"^0.20.2","webpack":"^3.11.0","xml-loader":"^1.2.1"},"dependencies":{"lodash":"^4.17.5"}}
 
 /***/ })
 /******/ ]);
