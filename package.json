@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fraigo/webpack_template.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
