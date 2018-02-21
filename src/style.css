@@ -22,9 +22,14 @@ body,td,input,select,textarea{
 }
 
 .code{
-	width:50%;
+	width:75%;
 	text-align:left;
 	white-space:pre-wrap;
+	display:inline-block;
+	background-color:#FFC;
+	border:1px solid #DDF;
+	font-family:Courier, fixed;
+	font-size:2vw;
 }
 
 .logo{

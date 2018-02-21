@@ -106,17 +106,19 @@ function component() {
   container.appendChild(element);
   
   var link=document.createElement("a");
-  link.href="https://github.com/fraigo/webpack_template/";
-  link.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
+	link.href="https://github.com/fraigo/webpack_template/";
+	link.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
   
   container.appendChild(link);
   
-  var code = document.createElement('div');
-  code.classList.add("code");
-  code.innerHTML=JSON.stringify(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a,null,2);
-  console.log(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a);
+  var codeContainer = document.createElement('div');
   
-  container.appendChild(code);
+  var code=document.createElement('div');
+	code.classList.add("code");
+	code.innerHTML=JSON.stringify(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a,null,2);
+	console.log(__WEBPACK_IMPORTED_MODULE_4__package_json___default.a);
+	codeContainer.appendChild(code);
+  container.appendChild(codeContainer);
   
   
   return container;
@@ -17352,7 +17354,7 @@ exports = module.exports = __webpack_require__(8)(false);
 
 
 // module
-exports.push([module.i, "\r\nbody{\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n}\r\n\r\nbody,td,input,select,textarea{\r\n\tfont-family: \"Roboto\", Arial, Helverica, sans;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local('Roboto'), local('Roboto-Regular'),\r\n       url(" + escape(__webpack_require__(9)) + ") format('woff2'), \r\n       url(" + escape(__webpack_require__(10)) + ") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\r\n}\r\n\r\n.centered{\r\n\ttext-align:center;\r\n}\r\n\r\n.code{\r\n\twidth:50%;\r\n\ttext-align:left;\r\n\twhite-space:pre-wrap;\r\n}\r\n\r\n.logo{\r\n\tbackground-image:url(" + escape(__webpack_require__(0)) + ");\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position: center;\r\n}", ""]);
+exports.push([module.i, "\r\nbody{\r\n\tmargin:0px;\r\n\tpadding:0px;\r\n}\r\n\r\nbody,td,input,select,textarea{\r\n\tfont-family: \"Roboto\", Arial, Helverica, sans;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Roboto';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local('Roboto'), local('Roboto-Regular'),\r\n       url(" + escape(__webpack_require__(9)) + ") format('woff2'), \r\n       url(" + escape(__webpack_require__(10)) + ") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\r\n}\r\n\r\n.centered{\r\n\ttext-align:center;\r\n}\r\n\r\n.code{\r\n\twidth:75%;\r\n\ttext-align:left;\r\n\twhite-space:pre-wrap;\r\n\tdisplay:inline-block;\r\n\tbackground-color:#FFC;\r\n\tborder:1px solid #DDF;\r\n\tfont-family:Courier, fixed;\r\n\tfont-size:2vw;\r\n}\r\n\r\n.logo{\r\n\tbackground-image:url(" + escape(__webpack_require__(0)) + ");\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position: center;\r\n}", ""]);
 
 // exports
 

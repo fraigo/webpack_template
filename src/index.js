@@ -19,17 +19,19 @@ function component() {
   container.appendChild(element);
   
   var link=document.createElement("a");
-  link.href="https://github.com/fraigo/webpack_template/";
-  link.appendChild(imageIcon(GitHubIcon))
+	link.href="https://github.com/fraigo/webpack_template/";
+	link.appendChild(imageIcon(GitHubIcon))
   
   container.appendChild(link);
   
-  var code = document.createElement('div');
-  code.classList.add("code");
-  code.innerHTML=JSON.stringify(Data,null,2);
-  console.log(Data);
+  var codeContainer = document.createElement('div');
   
-  container.appendChild(code);
+  var code=document.createElement('div');
+	code.classList.add("code");
+	code.innerHTML=JSON.stringify(Data,null,2);
+	console.log(Data);
+	codeContainer.appendChild(code);
+  container.appendChild(codeContainer);
   
   
   return container;
