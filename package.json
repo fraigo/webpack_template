@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "webpack-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git://github.com/fraigo/webpack_template.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["webpack","template","tutorial"],
+  "author": "Francisco Igor",
+  "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.8",
