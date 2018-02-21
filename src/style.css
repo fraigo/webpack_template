@@ -7,3 +7,9 @@ body{
 .centered{
 	text-align:center;
 }
+
+.logo{
+	background-image:url('./icon.png');
+	background-repeat:no-repeat;
+	background-position: center;
+}
