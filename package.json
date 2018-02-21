@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build" : "webpack"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.2",
     "webpack": "^3.11.0"
   },
   "dependencies": {
