@@ -81,32 +81,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon_png__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__icon_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__github_png__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__github_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__github_png__);
+
 
 
 
 
 function component() {
   var container = document.createElement('div');
+  container.classList.add('centered');
 
   
   var element = document.createElement('h1');
   // Lodash, now imported by this script
   element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack'], ' ');
   // Using class from loaded css
-  element.classList.add('centered');
-
-  // Add the image to our existing div.
-  var element2 = document.createElement('div');
-  var myIcon = new Image();
-  myIcon.src = __WEBPACK_IMPORTED_MODULE_2__icon_png___default.a;
-  element2.appendChild(myIcon);
-  element2.classList.add('centered');
 
   //Append elements to container
+  container.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_2__icon_png___default.a));
   container.appendChild(element);
-  container.appendChild(element2);
+  
+  var link=document.createElement("a");
+  link.href="https://github.com/fraigo/webpack_template/";
+  link.appendChild(imageIcon(__WEBPACK_IMPORTED_MODULE_3__github_png___default.a))
+  
+  container.appendChild(link);
   
   return container;
+}
+
+
+function imageIcon(obj){
+	var img=document.createElement("img");
+	img.src=obj;
+	return img;
 }
 
 document.body.appendChild(component());
@@ -17917,6 +17926,12 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f87561b8bb354ef83b09a66e54f70e08.png";
 
 /***/ })
 /******/ ]);
