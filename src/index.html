@@ -1,5 +1,4 @@
 <!doctype html>
-<!-- Generated <%= htmlWebpackPlugin.options.timestamp %> -->
 <html>
   <head>
     <title><%= htmlWebpackPlugin.options.title %></title>
@@ -11,12 +10,12 @@
     <meta property="og:url" content="<%= htmlWebpackPlugin.options.website %>"/>
     <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<%= htmlWebpackPlugin.options.website %><%= htmlWebpackPlugin.options.logo %>"/>
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.website.replace('https','http') %><%= htmlWebpackPlugin.options.logo %>"/>
     <meta property="og:image:width" content="<%= htmlWebpackPlugin.options.logoWidth %>"/>
     <meta property="og:image:height" content="<%= htmlWebpackPlugin.options.logoHeight %>"/>
-    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.logo %>?<%= htmlWebpackPlugin.options.timestamp %>">
-    <link rel="icon" type="image/png" href="<%= htmlWebpackPlugin.options.logo %>?<%= htmlWebpackPlugin.options.timestamp %>" sizes="<%= htmlWebpackPlugin.options.logoWidth %>x<%= htmlWebpackPlugin.options.logoHeight %>">
-    <link rel="apple-touch-icon" sizes="<%= htmlWebpackPlugin.options.logoWidth %>x<%= htmlWebpackPlugin.options.logoHeight %>" href="<%= htmlWebpackPlugin.options.logo %>?<%= htmlWebpackPlugin.options.timestamp %>">
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.logo %>?<%= webpack.hash %>">
+    <link rel="icon" type="image/png" href="<%= htmlWebpackPlugin.options.logo %>?<%= webpack.hash %>" sizes="<%= htmlWebpackPlugin.options.logoWidth %>x<%= htmlWebpackPlugin.options.logoHeight %>">
+    <link rel="apple-touch-icon" sizes="<%= htmlWebpackPlugin.options.logoWidth %>x<%= htmlWebpackPlugin.options.logoHeight %>" href="<%= htmlWebpackPlugin.options.logo %>?<%= webpack.hash %>">
   </head>
   <body>
 
