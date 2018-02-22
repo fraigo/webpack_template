@@ -1,7 +1,7 @@
 
 export default
 function imageIcon(obj){
-	var img=document.createElement("img");
+	var img=dxocument.createElement("img");
 	img.src=obj;
 	return img;
 }
