@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
   <head>
-    <title>WebPack Template</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Webpack, Template, Node.js, npm, Babel, SASS">
-    <meta name="description" content="Webpack template with basic components and setup">
-    <meta property="og:title" content="WebPack Template"/>
-    <meta property="og:description" content="Webpack template with basic components and setup"/>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>"/>
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>"/>
     <meta property="og:url" content="https://fraigo.github.io/webpack_template/dist/"/>
-    <meta property="og:site_name" content="WebPack Template"/>
+    <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://fraigo.github.io/webpack_template/dist/logo.png"/>
     <meta property="og:image:width" content="256"/>
@@ -19,5 +19,5 @@
   </head>
   <body>
     <script src="app.bundle.js"></script>
-  <script type="text/javascript" src="app.bundle.js"></script></body>
+  </body>
 </html>

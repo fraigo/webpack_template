@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry:{
@@ -8,6 +9,13 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'WebPack Template',
+	  template: 'src/index.html',
+	  description: 'Webpack template with basic components and setup'
+    })
+  ],
   module: {
 	rules: [
 	 {

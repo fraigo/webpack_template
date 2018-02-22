@@ -17960,7 +17960,7 @@ module.exports = __webpack_require__.p + "f87561b8bb354ef83b09a66e54f70e08.png";
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"webpack-template","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","build":"webpack"},"repository":{"type":"git","url":"git://github.com/fraigo/webpack_template.git"},"keywords":["webpack","template","tutorial"],"author":"Francisco Igor","license":"MIT","devDependencies":{"css-loader":"^0.28.9","csv-loader":"^2.1.1","file-loader":"^1.1.8","style-loader":"^0.20.2","webpack":"^3.11.0","xml-loader":"^1.2.1"},"dependencies":{"lodash":"^4.17.5"}}
+module.exports = {"name":"webpack-template","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","build":"webpack"},"repository":{"type":"git","url":"git://github.com/fraigo/webpack_template.git"},"keywords":["webpack","template","tutorial"],"author":"Francisco Igor","license":"MIT","devDependencies":{"css-loader":"^0.28.9","csv-loader":"^2.1.1","file-loader":"^1.1.8","html-webpack-plugin":"^2.30.1","style-loader":"^0.20.2","webpack":"^3.11.0","xml-loader":"^1.2.1"},"dependencies":{"lodash":"^4.17.5"}}
 
 /***/ }),
 /* 15 */
