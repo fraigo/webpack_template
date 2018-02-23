@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-	new CleanWebpackPlugin(['dist']),
+	  new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'WebPack Template',
   	  template: 'src/index.html',
@@ -24,7 +25,8 @@ module.exports = {
   	  logo:'icon.png',
   	  logoWidth:256,
   	  logoHeight:256
-    })
+    }),
+    new UglifyJSPlugin()
   ],
   module: {
 	rules: [
