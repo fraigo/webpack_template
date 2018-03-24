@@ -4,6 +4,8 @@ import Icon from './icon.png';
 import GitHubIcon from './github.png';
 import Data from '../package.json';
 import imageIcon from './utils.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 function component() {
   var container = document.createElement('div');
