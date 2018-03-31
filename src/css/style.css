@@ -13,8 +13,8 @@ body,td,input,select,textarea{
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-       url('./roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .centered{
@@ -33,7 +33,7 @@ body,td,input,select,textarea{
 }
 
 .logo{
-	background-image:url('./icon.png');
+	background-image:url('../images/icon.png');
 	background-repeat:no-repeat;
 	background-position: center;
 }

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
+const webPath = 'www';
 
 module.exports = {
   entry:{
@@ -11,10 +12,10 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, webPath)
   },
   plugins: [
-	  new CleanWebpackPlugin(['dist']),
+	  new CleanWebpackPlugin([webPath]),
     new HtmlWebpackPlugin({
       title: 'WebPack Template',
   	  template: 'src/index.html',
