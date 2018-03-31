@@ -21,13 +21,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([webPath]),
     new HtmlWebpackPlugin({
-      title: 'WebPack Template',
       template: 'src/index.html',
       hash: true,
+      title: 'WebPack Template',
       description: 'Webpack template with basic components and setup',
       keywords: 'Webpack, Template, Node.js, npm',
-      website: 'https://fraigo.github.io/webpack_template/dist/',
-      logo: 'icon.png',
+      website: 'https://fraigo.github.io/webpack_template/'+webPath+'/',
+      logo: 'images/icon.png',
       logoWidth: 256,
       logoHeight: 256
     }),
