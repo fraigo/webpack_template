@@ -17,6 +17,7 @@ These are the development dependencies and current versions. You can install it 
 * `extract-text-webpack-plugin` "^3.0.2" (Text extractor, used by SASS loader)
 * `file-loader` "^1.1.8" (Simple file loader)
 * `html-webpack-plugin` "^2.30.1" (HTML processor)
+* `lodash` "^4.17.5" (Javascript utilities)
 * `node-sass` "^4.8.3" (SASS plugin)
 * `sass-loader` "^6.0.7" (Load .sass files and compile .css file)
 * `style-loader` "^0.20.2" (Load styles)
