@@ -2,6 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const extractCssPlugin = new ExtractTextPlugin({
+   filename: 'css/main.css'
+});
 
 const webPath = 'www';
 
@@ -27,7 +31,8 @@ module.exports = {
       logoWidth: 256,
       logoHeight: 256
     }),
-    new UglifyJSPlugin()
+    new UglifyJSPlugin(),
+    extractCssPlugin,
   ],
   module: {
     rules: [
@@ -44,7 +49,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: 'images/[name].[ext]'
             }
           }
         ]
@@ -55,7 +60,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: 'fonts/[name].[ext]'
             }
           }
         ]
@@ -65,6 +70,12 @@ module.exports = {
         use: [
           'csv-loader'
         ]
+      },
+      {
+        test: /\.(scss)$/,
+        use: extractCssPlugin.extract({
+          use: ['css-loader', 'sass-loader']
+        })
       },
       {
         test: /\.xml$/,

@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+body, td, input, select, textarea {
+  font-family: "Roboto", Arial, Helverica, sans; }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(fonts/roboto-v18-latin-regular.woff2) format("woff2"), url(fonts/roboto-v18-latin-regular.woff) format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+.centered {
+  text-align: center; }
+
+.code {
+  width: 75%;
+  text-align: left;
+  white-space: pre-wrap;
+  display: inline-block;
+  background-color: #FFC;
+  border: 1px solid #DDF;
+  font-family: Courier, fixed;
+  font-size: 2vw; }
+
+.logo {
+  background-image: url(images/icon.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvbWFpbi5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
