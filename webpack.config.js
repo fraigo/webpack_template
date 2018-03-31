@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCssPlugin = new ExtractTextPlugin({
-   filename: 'css/main.css'
+   filename: 'main.css'
 });
 
 const webPath = 'www';
