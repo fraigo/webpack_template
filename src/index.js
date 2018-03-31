@@ -1,9 +1,11 @@
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
-import GitHubIcon from './github.png';
+import './css/main.scss';
+import Icon from './images/icon.png';
+import GitHubIcon from './images/github.png';
+import imageIcon from './js/utils.js';
+
 import Data from '../package.json';
-import imageIcon from './utils.js';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
